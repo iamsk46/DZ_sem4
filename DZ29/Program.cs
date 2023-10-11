@@ -2,9 +2,10 @@
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-int n = 8;
-int [] array = mass [n];
-for (int i = 0; i < length; i++)
+int [] array = new int [8];
+Random rnd = new Random();
+for (int i = 0; i < array.Length; i++)
 {
-    
+    array[i] = rnd.Next(0, 100);
 }
+System.Console.WriteLine('[' + string.Join(", ", array) + ']');
